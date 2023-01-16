@@ -1,0 +1,93 @@
+#app{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    /*background-color: #000000;*/
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.suc-main{
+    height: 90vh;
+
+}
+
+.playFrame{
+    width: 100%;
+    height: 90vh;
+    /*background-color: #dbe3e5;*/
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+}
+
+
+.user-list{
+    height: 90vh;
+    overflow:auto;
+    width: 100%;
+
+}
+.user-list-item{
+    margin-left: 2px;
+    margin-right: 3px;
+    border-radius: 3px;
+    line-height: 30px;
+    text-align: left;
+    color: white;
+    padding: 2px 0 1px 10px;
+    background: rgba(15, 16, 16, 0.5);
+    margin-top: 5px;
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+    -o-box-shadow:0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+}
+.user-list-item-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.suc-hand{
+    cursor: pointer;
+}
+
+.text-limit-size-3{
+    width: 70px;
+    overflow: hidden; /*超出隐藏*/
+    text-overflow: ellipsis;/*隐藏后添加省略号*/
+    white-space: nowrap;/*强制不换行*/
+}
+
+p:hover::after {
+    content:attr(title);
+    position: absolute;
+    z-index: 9999;
+}
+
+
+video{
+    border: none;
+}
+
+/**
+    底部 fixed
+ */
+.bottom-fixed{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    align-items: center;
+    justify-items: center;
+    height: 60px;
+    margin: 2px 2px 2px 2px;
+
+}

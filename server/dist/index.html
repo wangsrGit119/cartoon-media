@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>cartoon-image</title>
+    <link href="./static/favicon.ico" rel="shortcut icon">
+    <script src="./static/js/jquery-3.6.0.min.js" ></script>
+    <script src="./static/js/face-api/face-api.js"></script>
+    <!-- cdn引入ElementUI样式 -->
+    <link rel="stylesheet" href="./static/element-ui/index.css">
+    <link rel="stylesheet" href="./static/css/index.css"  crossorigin="anonymous">
+
+    <style type="text/css">
+        body{
+            margin: 0;
+            height: 90vh;
+            /*background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);*/
+            font-size: 12px;
+            margin-top: 20px;
+        }
+        
+        .images{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+        }
+        .inner-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+
+
+</head>
+<body>
+<div id="app" v-loading="loading" element-loading-text="拼命转换中"  element-loading-spinner="el-icon-loading" element-loading-background="rgba(0, 0, 0, 0.8)">
+    <el-row style="display: flex;flex-direction: row;justify-content: center;align-items: center;width: 100%;">
+       <el-upload
+              class="upload-demo"
+              drag
+              :show-file-list="false"    
+              action="nono"
+              accept="image/jpeg,image/png,image/jpg"
+              :http-request="uploadImage"
+              list-type="picture"
+              multiple>
+              <i class="el-icon-upload"></i>
+              <div class="el-upload__text">将文件拖到此处，或<em>点击上传</em></div>
+        </el-upload>
+    </el-row>
+    <el-row>
+            <div class="images" v-if="trResult.length > 0">
+                <div v-for="(item,index) in trResult" :key="index">
+                    <div class="inner-container">
+                        <el-image style="height: 200px;width: 200px;margin: 2px;"  :src="item.url" :preview-src-list="preViewList"></el-image>
+                    <el-button size="mini" type="info" @click="downLoadFile(item.url)">下载</el-button>
+                    </div>
+                </div>
+            </div>
+    </el-row>
+       
+</div>
+<!--cdn引入ElementUI组件必须先引入Vue-->
+<script src="./static/vue/vue.js"></script>
+<!-- cdn引入ElementUI组件库 -->
+<script src="./static/element-ui/index.js"></script>
+<script>
+
+
+var app = new Vue({
+    el: '#app',
+    data() {
+        return {
+            trResult:[],
+            preViewList:[],
+            loading:false,
+            
+        }
+    },
+    created: function (){
+        
+    },
+    methods : {
+        async uploadImage(f){
+            console.log(f)
+            await this.uploadFile(f.file)
+        },
+        async submit(){
+            let data = {
+                name:"w",
+                description:"xxxxxxx"
+            }
+            $.ajax({
+                async: true,
+                url: '/commit-record/',
+                type: 'POST',
+                data:JSON.stringify(data),
+                contentType:"application/json",
+                success: function (res) {
+                    console.log("res",res)
+                
+                },
+                error: function (err) {
+                    reject(err)
+                }
+            });
+        },
+        randomString(e) {    
+            e = e || 32;
+            var t = "ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678",
+            a = t.length,
+            n = "";
+            for (i = 0; i < e; i++) n += t.charAt(Math.floor(Math.random() * a));
+            return n
+        },
+        downLoadFile(fileUrl){
+            let fileName  = this.randomString(10)
+            const a = document.createElement("a");
+            (document.body || document.documentElement).appendChild(a);
+            a.href = fileUrl
+            a.target = '_blank'
+            if ('download' in a) {
+              a.download = fileName
+            } else {
+              a.setAttribute('download', fileName)
+            }
+            a.click();
+            a.remove()
+        },
+        async uploadFile(file){
+            const that = this
+            that.loading = true
+            let data = new FormData()
+            data.append('file', file);
+            $.ajax({
+                async: true,
+                url: '/image-upload/',
+                type: 'POST',
+                data:data,
+                contentType: false,
+                processData: false,
+                success: function (res) {
+                    that.loading = false
+                    if(res.status === 200){
+                        that.$message.success("转换成功")
+                        let imageUrl = 'data:image/png;base64,'+res['base64']
+                        let e = {url:imageUrl}
+                        that.trResult.push(e)
+                        that.preViewList.push(imageUrl)
+                    }else{
+                        that.$message.error("转换异常，请重试")
+                    }
+                    
+                
+                },
+                error: function (err) {
+                    console.error(err)
+                    that.$message.error("转换异常，请重试")
+                    that.loading = false
+                }
+            });
+        },
+    },
+
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+fastapi==0.87.0
+loguru==0.6.0
+matplotlib==3.3.0
+numpy==1.19.5
+pydantic==1.10.2
+tensorflow==2.1.0
+tf_slim==1.1.0
+uvicorn==0.20.0
+opencv_python==4.6.0.66
+scikit-video==1.1.11
+python-multipart==0.0.5
