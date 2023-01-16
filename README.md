@@ -2,7 +2,7 @@
 
 > image or video to cartoon
 
-[example](example.png)
+![example](example.png)
 
 > base repo [cartoonize](https://github.com/experience-ml/cartoonize)
 
