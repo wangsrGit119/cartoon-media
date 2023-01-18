@@ -5,7 +5,6 @@
     <title>cartoon-image</title>
     <link href="./static/favicon.ico" rel="shortcut icon">
     <script src="./static/js/jquery-3.6.0.min.js" ></script>
-    <script src="./static/js/face-api/face-api.js"></script>
     <!-- cdn引入ElementUI样式 -->
     <link rel="stylesheet" href="./static/element-ui/index.css">
     <link rel="stylesheet" href="./static/css/index.css"  crossorigin="anonymous">
@@ -18,7 +17,7 @@
             font-size: 12px;
             margin-top: 20px;
         }
-        
+
         .images{
             width: 100%;
             display: flex;
@@ -44,7 +43,7 @@
        <el-upload
               class="upload-demo"
               drag
-              :show-file-list="false"    
+              :show-file-list="false"
               action="nono"
               accept="image/jpeg,image/png,image/jpg"
               :http-request="uploadImage"
@@ -64,7 +63,7 @@
                 </div>
             </div>
     </el-row>
-       
+
 </div>
 <!--cdn引入ElementUI组件必须先引入Vue-->
 <script src="./static/vue/vue.js"></script>
@@ -80,11 +79,11 @@ var app = new Vue({
             trResult:[],
             preViewList:[],
             loading:false,
-            
+
         }
     },
     created: function (){
-        
+
     },
     methods : {
         async uploadImage(f){
@@ -104,14 +103,14 @@ var app = new Vue({
                 contentType:"application/json",
                 success: function (res) {
                     console.log("res",res)
-                
+
                 },
                 error: function (err) {
                     reject(err)
                 }
             });
         },
-        randomString(e) {    
+        randomString(e) {
             e = e || 32;
             var t = "ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678",
             a = t.length,
@@ -156,8 +155,8 @@ var app = new Vue({
                     }else{
                         that.$message.error("转换异常，请重试")
                     }
-                    
-                
+
+
                 },
                 error: function (err) {
                     console.error(err)
