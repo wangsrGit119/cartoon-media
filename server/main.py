@@ -74,18 +74,26 @@ async def create_item(item: Item):
 
 
 async def img2cv2Img(img):
-    return cv2.imdecode(np.fromstring(await img.read(), np.uint8),cv2.IMREAD_UNCHANGED)
+    try:
+        return cv2.imdecode(np.fromstring(await img.read(), np.uint8),cv2.IMREAD_UNCHANGED)
+    except Exception as e:
+        logger.info("CV图片转换异常 " +str(e))
+        raise e
 
 def cv2_base64(image):
     base64_str = cv2.imencode('.jpg',image)[1].tostring()
     base64_str = base64.b64encode(base64_str)
     return base64_str 
 
-@logger.catch
 async def actiontarnsfer(image_file):
     image = await img2cv2Img(image_file)
-    cartoon_image = wb_cartoonizer.infer(image)
-    return cv2_base64(cartoon_image)
+    try:
+        cartoon_image = wb_cartoonizer.infer(image)
+        return cv2_base64(cartoon_image)
+    except Exception as e:
+        logger.info("卡通化异常 " +str(e))
+        raise e
+    
 
 
 

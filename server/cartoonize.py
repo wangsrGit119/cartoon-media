@@ -6,6 +6,8 @@ For it to work tensorflow version 2.x changes were obtained from https://github.
 # -*- coding: utf-8 -*-
 
 import os
+os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
+
 import uuid
 import time
 import subprocess
@@ -13,6 +15,7 @@ import sys
 import platform
 import cv2
 import numpy as np
+
 try:
     import tensorflow.compat.v1 as tf
 except ImportError:
