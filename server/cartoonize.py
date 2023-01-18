@@ -6,7 +6,8 @@ For it to work tensorflow version 2.x changes were obtained from https://github.
 # -*- coding: utf-8 -*-
 
 import os
-os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
+# 忽略警告
+# os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
 
 import uuid
 import time
@@ -42,7 +43,9 @@ class WB_Cartoonize:
         image = cv2.resize(image, (w, h),
                             interpolation=cv2.INTER_AREA)
         h, w = (h//8)*8, (w//8)*8
-        image = image[:h, :w, :]
+        c = 3
+        print(h,w,c)
+        image = image[:h, :w, :c]
         return image
 
     def load_model(self, weights_dir, gpu):
@@ -79,8 +82,9 @@ class WB_Cartoonize:
     def infer(self, image):
         image = self.resize_crop(image)
         batch_image = image.astype(np.float32)/127.5 - 1
+        print(np.shape(batch_image))
         batch_image = np.expand_dims(batch_image, axis=0)
-        
+        print(np.shape(batch_image))
         ## Session Run
         output = self.sess.run(self.final_out, feed_dict={self.input_photo: batch_image})
         

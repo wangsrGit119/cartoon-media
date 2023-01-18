@@ -11,3 +11,76 @@
 2023-01-16 10:03:18.073 | INFO     | main:image_upload:58 - 文件信息 ai-possessed-photography-zbLW0FG8XU8-unsplash.jpg
 2023-01-16 10:03:18.073 | INFO     | main:image_upload:58 - 文件信息 ai-possessed-photography-zbLW0FG8XU8-unsplash.jpg
 2023-01-17 18:56:33.257 | INFO     | main:image_upload:58 - 文件信息 alarm.png
+2023-01-18 12:08:19.054 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 12:08:19.097 | INFO     | main:actiontarnsfer:94 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 12:08:19.097 | INFO     | main:actiontarnsfer:94 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 12:08:23.667 | INFO     | main:image_upload:58 - 文件信息 alarm.png
+2023-01-18 12:08:23.667 | INFO     | main:image_upload:58 - 文件信息 alarm.png
+2023-01-18 12:09:34.907 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 12:09:34.935 | INFO     | main:actiontarnsfer:94 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 12:09:34.935 | INFO     | main:actiontarnsfer:94 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 12:09:41.158 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 12:09:41.158 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 12:09:41.190 | INFO     | main:actiontarnsfer:94 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 12:09:41.190 | INFO     | main:actiontarnsfer:94 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 12:10:00.749 | INFO     | main:image_upload:58 - 文件信息 alarm.png
+2023-01-18 12:10:00.749 | INFO     | main:image_upload:58 - 文件信息 alarm.png
+2023-01-18 12:10:06.021 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 12:10:06.021 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 12:10:06.041 | INFO     | main:actiontarnsfer:94 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 12:10:06.041 | INFO     | main:actiontarnsfer:94 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 12:13:12.382 | INFO     | main:image_upload:58 - 文件信息 alarm.png
+2023-01-18 12:14:44.036 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 12:14:44.036 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 12:15:48.063 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 12:15:48.063 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 12:16:17.829 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 12:16:17.829 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 12:16:39.928 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 12:16:39.928 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 12:25:27.314 | INFO     | main:image_upload:58 - 文件信息 alarm.png
+2023-01-18 12:25:45.010 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 12:25:45.010 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 12:25:45.035 | INFO     | main:actiontarnsfer:94 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 12:25:45.035 | INFO     | main:actiontarnsfer:94 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 12:25:50.718 | INFO     | main:image_upload:58 - 文件信息 alarm.png
+2023-01-18 12:25:50.718 | INFO     | main:image_upload:58 - 文件信息 alarm.png
+2023-01-18 12:26:47.905 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 12:26:47.905 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 12:26:47.922 | INFO     | main:actiontarnsfer:94 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 12:26:47.922 | INFO     | main:actiontarnsfer:94 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 12:28:20.934 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 12:28:21.130 | INFO     | main:actiontarnsfer:96 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 12:28:21.130 | INFO     | main:actiontarnsfer:96 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 12:48:58.033 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 12:48:58.267 | INFO     | main:actiontarnsfer:98 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 12:48:58.267 | INFO     | main:actiontarnsfer:98 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 12:50:00.264 | INFO     | main:image_upload:58 - 文件信息 alarm.png
+2023-01-18 12:53:26.791 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 12:53:26.808 | INFO     | main:actiontarnsfer:99 - 卡通化异常 too many values to unpack (expected 3)
+2023-01-18 12:53:26.808 | INFO     | main:actiontarnsfer:99 - 卡通化异常 too many values to unpack (expected 3)
+2023-01-18 12:56:51.390 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 12:56:51.408 | INFO     | main:actiontarnsfer:95 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 12:56:51.408 | INFO     | main:actiontarnsfer:95 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 12:58:23.699 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 12:58:23.720 | INFO     | main:actiontarnsfer:95 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 12:58:23.720 | INFO     | main:actiontarnsfer:95 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 12:59:36.893 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 12:59:36.913 | INFO     | main:actiontarnsfer:95 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 12:59:36.913 | INFO     | main:actiontarnsfer:95 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 13:00:03.495 | INFO     | main:image_upload:58 - 文件信息 alarm.png
+2023-01-18 13:00:03.495 | INFO     | main:image_upload:58 - 文件信息 alarm.png
+2023-01-18 13:03:11.685 | INFO     | main:image_upload:58 - 文件信息 alarm.png
+2023-01-18 13:03:27.076 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 13:03:27.076 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 13:03:27.109 | INFO     | main:actiontarnsfer:95 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 13:03:27.109 | INFO     | main:actiontarnsfer:95 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 13:07:20.154 | INFO     | main:image_upload:58 - 文件信息 alarm.png
+2023-01-18 13:07:55.385 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 13:07:55.385 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 13:07:55.416 | INFO     | main:actiontarnsfer:95 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 13:07:55.416 | INFO     | main:actiontarnsfer:95 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 13:08:26.227 | INFO     | main:image_upload:58 - 文件信息 10001.jpg
+2023-01-18 13:08:26.246 | INFO     | main:actiontarnsfer:95 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 13:08:26.246 | INFO     | main:actiontarnsfer:95 - 卡通化异常 Cannot feed value of shape (1, 616, 608, 4) for Tensor 'input_image:0', which has shape '(1, None, None, 3)'
+2023-01-18 13:09:10.807 | INFO     | main:image_upload:58 - 文件信息 10001.jpg

@@ -74,8 +74,9 @@ async def create_item(item: Item):
 
 
 async def img2cv2Img(img):
+    data = await img.read()
     try:
-        return cv2.imdecode(np.fromstring(await img.read(), np.uint8),cv2.IMREAD_UNCHANGED)
+        return cv2.imdecode(np.fromstring(data, np.uint8),cv2.IMREAD_UNCHANGED)
     except Exception as e:
         logger.info("CV图片转换异常 " +str(e))
         raise e
@@ -165,11 +166,15 @@ def videoactiontransfer(original_video_path):
 if __name__ == '__main__':
     gpu = len(sys.argv) < 2 or sys.argv[1] != '--cpu'
 
-    file_path = './videos/WeChat_20221204104403.mp4'
+    # file_path = './videos/WeChat_20221204104403.mp4'
+    im = cv2.imread('./images/10001.jpg')
+    im2 = cv2.imread('./images/alarm.png')
+    print(im.shape)
+    print(im2.shape)
 
-
-    videoactiontransfer(file_path)
-    print("开始转换，转换结果文件见：uploader")
+    # video transfer
+    # videoactiontransfer(file_path)
+    # print("开始转换，转换结果文件见：uploader")
 
 
     
